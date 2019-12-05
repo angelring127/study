@@ -18,6 +18,8 @@ function App() {
       {visible && <Component.Info />}
       <Component.Counter />
       <Component.ContextSample />
+      <Component.CounterUseReducer />
+      <Component.InfoUseReducer />
     </div>
   );
 }
