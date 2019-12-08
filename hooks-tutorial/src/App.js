@@ -20,6 +20,8 @@ function App() {
       <Component.ContextSample />
       <Component.CounterUseReducer />
       <Component.InfoUseReducer />
+      <Component.Average />
+      <Component.UsePromiseSample />
     </div>
   );
 }
