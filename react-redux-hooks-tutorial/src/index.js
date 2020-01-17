@@ -8,6 +8,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './modules';
 import { Provider } from 'react-redux';
 
+// 크롬 개발툴에서 리덕스 내용을 볼 수 있게 해주심
 const store = createStore(rootReducer, composeWithDevTools());
 
 
