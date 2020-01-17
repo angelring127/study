@@ -1,8 +1,5 @@
-const INCREMENT = 'counter/INCREMENT';
-const DECREMENT = 'counter/DECREMENT';
-
-export const increment = () => ({ type: INCREMENT });
-export const decrement = () => ({ type: DECREMENT });
+export const INCREMENT = 'counter/INCREMENT';
+export const DECREMENT = 'counter/DECREMENT';
 
 const initialState = 0;
 
