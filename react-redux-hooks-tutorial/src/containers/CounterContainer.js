@@ -3,11 +3,17 @@ import Counter from '../components/Counter';
 import { INCREMENT, DECREMENT } from '../modules/counter';
 import { useSelector, useDispatch } from 'react-redux';
 
+
+
 const CounterContainer = () => {
+
+  // 리덕스로부터 카운터 데이터를 내려 받음
   const counter = useSelector(state => state.counter, []);
   
-  const dispatch = useDispatch()
-  const onIncrement = useCallback(() => dispatch({ type: INCREMENT }),[dispatch])
+  const dispatch = useDispatch();
+
+  // 액션 생성
+  const onIncrement = useCallback(() => dispatch({ type: INCREMENT }),[dispatch]);
   const onDcrement = useCallback(() => dispatch({ type: DECREMENT }),[dispatch]);
 
   return (
